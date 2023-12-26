@@ -344,7 +344,7 @@ opacity:0 ;
 }
 /* ------------------ cart ------------------------ */
 table,td, th{
-    width: 70%;
+    width: 50%;
     text-align: center;
 }
 table {
@@ -385,17 +385,6 @@ thead th{
 /* --------------------------------------------- */
 
 
-
-/* #btnclear{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px;
-    border: 0px;
-    background-color: rgba(125, 125, 237, 0);
-    width: 50px;
-    border-radius:10%;
-    cursor: pointer;
-    transition: all 0.5s;
-} */
 @media screen and  (max-width: 600px){
 #cartLogo{
     display: none;
