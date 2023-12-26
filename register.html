@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Store</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="assets/free-shipping.png">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div id="logo">
+          <h1><i class="bi bi-bag-heart-fill"></i> Shopping</h1>
+        </div>
+        <!-- ------------------------------- -->
+        <div>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="#" class="active">Registration</a></li>
+          </ul>
+        </div>
+        <!-- ------------------------------------ -->
+        <div id="cartLogo">
+          <ul>
+            <li>
+              <a href="cart.html"
+                ><i class="bi bi-cart-check cart-icon"></i
+                ><span id="cartCounter"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+<main>
+      <div>
+        <div  class="contactUsFormContainer registertionForm" id="registertionForm">
+          <button id="replaceFormBtn1" class="replaceFormBtn"><i class="bi bi-arrow-repeat"></i></button>
+
+          <h2 class="formTitle"> Registration </h2>
+        <form action="./home.html" method="get" id="contactForm">
+        
+          <div class="contactUsFormInputContainer">
+            <label for="fullName" class="contactUsFormLabel"><i class="bi bi-person-circle"></i></label><input type="text" id="fullName" name="fullName" class="contactUsFormInput" placeholder="Full Name" autocomplete="family-name" required>
+          </div>
+        
+          <div class="contactUsFormInputContainer">
+            <label for="userName" class="contactUsFormLabel"><i class="bi bi-envelope-at-fill"></i></label><input type="text" id="userName" name="userName" class="contactUsFormInput" placeholder="User Name"required>
+          </div> 
+        
+          <div class="contactUsFormInputContainer">
+            <label for="password" class="contactUsFormLabel"><i class="bi bi-file-lock2-fill"></i></label><input type="password" id="password" name="password" class="contactUsFormInput" placeholder="Password" required>
+          </div>
+        
+          <div class="contactUsFormInputContainer">
+            <label for="confirmPassword" class="contactUsFormLabel"><i class="bi bi-file-lock2-fill"></i></label><input type="password" id="confirmPassword" name="confirmPassword" class="contactUsFormInput" placeholder="Confirm Password" required>
+          </div>
+        
+        
+          <div class="contactUsFormInputContainer">
+            <input type="submit" value="Register" class="contactUsFormButton">
+          </div>
+        </form>
+          </div>
+
+          <div  class="contactUsFormContainer logInForm" id="logInForm">
+            <button id="replaceFormBtn2" class="replaceFormBtn"><i class="bi bi-arrow-repeat"></i></button>
+            
+            <h2 class="formTitle"> Log In </h2>
+          <form action="./home.html" method="get" id="contactForm">
+          
+                      
+            <div class="contactUsFormInputContainer">
+              <label for="userName" class="contactUsFormLabel"><i class="bi bi-envelope-at-fill"></i></label><input type="text" id="userName" name="userName" class="contactUsFormInput" placeholder="User Name"required>
+            </div> 
+          
+            <div class="contactUsFormInputContainer">
+              <label for="password" class="contactUsFormLabel"><i class="bi bi-file-lock2-fill"></i></label><input type="password" id="password" name="password" class="contactUsFormInput" placeholder="Password" required>
+            </div>
+            <div class="contactUsFormInputContainer">
+              <input type="checkbox" name="rememberme" id="rememberme">
+              <label for="rememberme">Remember Me</label>
+            </div>
+
+          
+          
+            <div class="contactUsFormInputContainer">
+              <input type="submit" id="logInBtn" value="Log In" class="contactUsFormButton">
+            </div>
+          </form>
+            </div>
+      </div>
+    
+    
+ </main>   
+
+
+<script type="module" src="js/register.js"></script>
+
+</body>
+</html>

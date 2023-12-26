@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X-Store</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="assets/free-shipping.png">
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body>
+       <!-- nav bar -->
+       <nav>
+        <div id="logo">
+          <h1><i class="bi bi-bag-heart-fill"></i> Shopping</h1>
+        </div>
+        <!-- ------------------------------- -->
+        <div>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html" id="signOut">Sign Out <i class="bi bi-door-open"></i></a></li>
+          </ul>
+        </div>
+        <!-- ------------------------------------ -->
+        <div id="cartLogo">
+          <ul>
+            <li>
+              <a href="cart.html" class="active"
+                ><i class="bi bi-cart-check cart-icon"></i
+                ><span id="cartCounter"></span
+              ></a>
+            </li>
+            <li>
+              <img src="assets/about.jpeg" alt="userAvatar" id="userAvatar">
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+
+    <main>
+
+<div style="display: flex; justify-content: space-evenly;">
+
+  <div  class="contactUsFormContainer" style="width: 369px;">
+    <h4 style="text-align: center" id="paymentFormLabel"> </h4>
+  <form action="" method="post" id="payment-form">
+  
+    <div class="contactUsFormInputContainer">
+      <label for="fullName" class="contactUsFormLabel"><i class="bi bi-person-circle"></i></label><input type="text" id="fullName" name="fullName" class="contactUsFormInput" placeholder="Full Name" required>
+    </div>
+  
+    <div class="contactUsFormInputContainer">
+      <label for="email" class="contactUsFormLabel"><i class="bi bi-envelope-at-fill"></i></label><input type="email" id="email" name="email" class="contactUsFormInput" placeholder="Example@gmail.com"required>
+    </div> 
+  
+    <div class="contactUsFormInputContainer">
+      <label for="phoneNumber" class="contactUsFormLabel"><i class="bi bi-telephone-fill"></i></label><input type="tel" id="phoneNumber" name="phoneNumber" class="contactUsFormInput" placeholder="Tel Number" required>
+    </div>
+  
+    <div class="contactUsFormInputContainer">
+      <label for="Address" class="contactUsFormLabel"><i class="bi bi-pin-map-fill"></i></label><input type="text" id="address" name="address" class="contactUsFormInput" placeholder="Address" required>
+    </div>
+  
+    <div class="contactUsFormInputContainer">
+      <div id="card-element"></div>
+    </div>
+  
+    <div class="contactUsFormInputContainer">
+      <button id="pay" type="button" class="contactUsFormButton">Pay</button>
+    </div>
+  </form>
+    </div>
+  
+  </div>
+    
+</main>
+
+
+
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/payment.js"></script>
+  </body>
+</html>

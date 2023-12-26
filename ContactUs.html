@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X-Store</title>
+<link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+<link rel="stylesheet" href="css/bootstrap-icons.css" />
+<link rel="icon" type="image/x-icon" href="assets/free-shipping.png">
+<link rel="stylesheet" href="css/home.css">
+
+
+
+</head>
+
+
+<body>
+  <!-- nav bar  -->
+  <nav>
+    <div id="logo">
+      <h1><i class="bi bi-bag-heart-fill"></i> Shopping</h1>
+    </div>
+    <!-- ------------------------------- -->
+    <div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Contact Us</a></li>
+        <li><a href="register.html" id="signOut">Sign Out <i class="bi bi-door-open"></i></a></li>
+      </ul>
+    </div>
+    <!-- ------------------------------------ -->
+    <div id="cartLogo">
+      <ul>
+        <li>
+          <a href="cart.html"
+            ><i class="bi bi-cart-check cart-icon"></i
+            ><span id="cartCounter"></span
+          ></a>
+        </li>
+        <li>
+          <img src="assets/about.jpeg" alt="userAvatar" id="userAvatar">
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- popup -->
+  <h2 id="popup">
+  </h2>
+  <!-- form -->
+<div style="display: flex; justify-content: space-evenly;">
+
+<div  class="contactUsFormContainer">
+  <h4 style="text-align: center"> Please fill the form! </h4>
+<form action="./home.html" method="post" id="contactForm">
+
+  <div class="contactUsFormInputContainer">
+    <label for="fullName" class="contactUsFormLabel"><i class="bi bi-person-circle"></i></label><input type="text" id="fullName" name="fullName" class="contactUsFormInput" placeholder="Full Name" autocomplete="family-name" required>
+  </div>
+
+  <div class="contactUsFormInputContainer">
+    <label for="email" class="contactUsFormLabel"><i class="bi bi-envelope-at-fill"></i></label><input type="email" id="email" name="email" class="contactUsFormInput" placeholder="Example@gmail.com"required>
+  </div> 
+
+  <div class="contactUsFormInputContainer">
+    <label for="phoneNumber" class="contactUsFormLabel"><i class="bi bi-telephone-fill"></i></label><input type="tel" id="phoneNumber" name="phoneNumber" class="contactUsFormInput" placeholder="Tel Number" required>
+  </div>
+
+  <div class="contactUsFormInputContainer">
+    <label for="Address" class="contactUsFormLabel"><i class="bi bi-pin-map-fill"></i></label><input type="text" id="address" name="address" class="contactUsFormInput" placeholder="Address" required>
+  </div>
+
+  <div class="contactUsFormInputContainer">
+    <textarea name="message" id="message" cols="38" rows="10" placeholder="Write Something">Thanks!</textarea>
+  </div>
+
+  <div class="contactUsFormInputContainer">
+    <input type="submit" value="send" class="contactUsFormButton">
+  </div>
+</form>
+  </div>
+
+<div class="contactUsFormContainer">
+<img src="assets/js.png" alt="" class="contactUsImage">
+</div>
+</div>
+  
+
+<!-- footer -->
+<button id="backToTopBtn"><i class="bi bi-file-arrow-up-fill"></i></button>
+<footer>
+  <p>
+    <i class="bi bi-bag-heart-fill"></i> Mohamed Ashraf Ibrahim 
+  </p>
+</footer>
+
+
+<script type="module" src="js/contact.js"></script>
+<!-- <script>
+  //#region validation
+  const form = document.getElementById("contactForm");
+  //  let sub=document.getElementById("btnsub")
+  form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      const fullName = form.elements.fullName.value;
+      const email = form.elements.email.value;
+      const phoneNumber = form.elements.phoneNumber.value;
+  
+      const re = /^(\+010-|\+012|\+011)?\d{11}$/;
+      let regex = /^[a-z0-9]+@[a-z]+.[a-z]{2,3}$/;
+      let testmobile = re.test(phoneNumber);
+      let result = regex.test(email);
+      
+      if (fullName.trim() === "" || !result || !testmobile) {
+          alert("Please fill in all fields or provide a valid data.");
+          return;
+      }
+     
+      alert("Form submitted successfully!");
+      form.reset();
+  });
+  
+  
+    function ContactProcess(){
+      alert( `Contact Us
+          Email: Mr.Koupe@gmail.com
+          Phone: +201208860962`)
+    }
+    //#endregion
+
+</script> -->
+
+</body>
+</html>
