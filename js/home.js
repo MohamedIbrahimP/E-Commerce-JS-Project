@@ -151,7 +151,7 @@ function Fun1() {
 }
 document.addEventListener("DOMContentLoaded", function () {
   if (!getCookie('logedIn')) {
-    location.assign('/register.html')
+    location.assign('/index.html')
 }
   SlideShow();
   Fun1();

@@ -5,7 +5,7 @@ let cartTable= document.getElementById('cartTable')
 
 window.addEventListener('DOMContentLoaded',function(){
     if (!getCookie('logedIn')) {
-        location.assign('/register.html')
+        location.assign('/index.html')
     }
     viewCart();
     CalcTotal();
