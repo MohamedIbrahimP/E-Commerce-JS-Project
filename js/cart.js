@@ -47,5 +47,5 @@ function CalcTotal() {
 document.getElementById('signOut').addEventListener('click',()=>{deleteCookie('logedIn')})
 backToTopBtn.addEventListener("click", scrollToTop);
 goCheckBtn.addEventListener('click',function(){
-    location.assign('/payment.html');
+    location.assign('/E-Commerce-JS-Project/payment.html');
 });
