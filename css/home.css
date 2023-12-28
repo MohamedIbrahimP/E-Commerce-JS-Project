@@ -201,6 +201,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: -moz-available;
+    width: -webkit-fill-available;
 }
 #backToTopBtn{
     position: sticky;

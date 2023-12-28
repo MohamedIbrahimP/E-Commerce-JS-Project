@@ -56,7 +56,7 @@ const paymentMethodInfo = await stripe.createPaymentMethod({
 const confirmed = await stripe.confirmCardPayment(paymentIntent.clientSecret, {
   payment_method: paymentMethodInfo.paymentMethod.id,
 });
-
+console.log(confirmed);
 if (confirmed.error) {
   console.error(confirmed.error);
   pay.innerText='Error!';
@@ -69,7 +69,7 @@ else if (confirmed.paymentIntent.status === 'succeeded') {
   paymentFormLabel.textContent =`Your Paid Succeed, Thank You!` ;
   
   setTimeout(() => {
-    location.assign('/cart.html');
+    location.replace('/cart.html');
   }, 2000);
   
 }
