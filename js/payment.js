@@ -69,7 +69,7 @@ else if (confirmed.paymentIntent.status === 'succeeded') {
   paymentFormLabel.textContent =`Your Paid Succeed, Thank You!` ;
   
   setTimeout(() => {
-    location.replace('/cart.html');
+    location.replace('/E-Commerce-JS-Project/home.html');
   }, 2000);
   
 }
