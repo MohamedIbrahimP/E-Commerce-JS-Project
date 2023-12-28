@@ -54,7 +54,7 @@ contactForm.addEventListener("submit", function(event) {
 
 document.addEventListener("DOMContentLoaded",function(){
     if (!getCookie('logedIn')) {
-        location.assign('/index.html')
+        location.assign('/E-Commerce-JS-Project/index.html')
     }
     RetrieveData();
 
