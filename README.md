@@ -28,5 +28,5 @@ This project was generated with **HTML & Java Script**
 
 
 
-![Demo](/Demo.jpg "Desktop Demo")
+![Demo](/Demo.png "Desktop Demo")
 
