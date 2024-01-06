@@ -26,7 +26,5 @@ This project was generated with **HTML & Java Script**
 **Development** HTML5 , CSS3 , Java Script
 
 
-
-
 ![Demo](/Demo.png "Desktop Demo")
 
